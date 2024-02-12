@@ -1,0 +1,206 @@
+/* Set background color and center content vertically and horizontally */
+body {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Style the unordered list */
+ul {
+    list-style: none;
+    display: flex;
+    width: auto;
+    gap: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style each list item (icon container) */
+ul li {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    box-shadow: 5px 5px 15px 5px #000000;
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+}
+
+/* Style anchor tags within list items */
+ul li a {
+    text-decoration: none;
+    color: rgb(108, 108, 108);
+}
+
+/* Styling and hover effect for the first list item */
+ul li.li1::before {
+    /* Create a pseudo-element for the hover effect */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #eb10ff;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+/* Change properties on hover */
+ul li.li1:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #eb10ff;
+}
+
+/* Change properties on hover */
+ul li.li1:hover {
+    color: #eb10ff;
+    box-shadow: 0 0 5px #eb10ff;
+    text-shadow: 0 0 5px #eb10ff;
+}
+
+/* Change properties of anchor tag on hover */
+ul li.li1:hover>a.a1 {
+    color: #eb10ff;
+}
+
+/* Similar styling and hover effects for other list items (li2, li3, li4) */
+ul li.li2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #ff0000;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+ul li.li2:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ff0000;
+    border-radius: 25px;
+}
+
+ul li.li2:hover {
+    color: #ff0000;
+    box-shadow: 0 0 5px #ff0000;
+    text-shadow: 0 0 5px #ff0000;
+    border-radius: 25px;
+    transition: .5s;
+}
+
+ul li.li2:hover>a.a2 {
+    color: #ff0000;
+}
+
+ul li.li3::before {
+    content: '';
+    position: absolute;
+    top: 50;
+    left: 50;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #00f2ea;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+ul li.li3:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ff0050;
+    z-index: 0;
+    width: 150px;
+    height: 150px;
+}
+
+ul li.li3:hover {
+    color: #ff0050;
+    box-shadow: 0 0 5px #ff0050;
+    text-shadow: 0 0 5px #ff0050;
+    transition: .5s;
+}
+
+ul li.li3 a.a3 {
+    z-index: 2;
+}
+
+ul li.li3:hover>a.a3 {
+    color: rgb(35, 35, 35);
+}
+
+ul li.li4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+ul li.li4:hover::before {
+    transform: scale(1.06);
+    box-shadow: 0 0 15px #FF4500;
+}
+
+ul li.li4:hover {
+    transform: scale(1.3);
+
+    z-index: 2;
+}
+
+ul li.li4:hover>a.a4 {
+    color: #FF4500;
+}
+
+ul li.li5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+ul li.li5:hover::before {
+    transform: scale(1.06);
+    box-shadow: 0 0 15px #1ED760;
+}
+
+ul li.li5:hover {
+    transform: scale(1.3);
+
+    z-index: 2;
+}
+
+ul li.li5:hover>a.a5 {
+    color: #1ED760;
+}
