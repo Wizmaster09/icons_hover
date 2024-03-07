@@ -164,7 +164,7 @@ ul li.li4::before {
 
 ul li.li4:hover::before {
     transform: scale(1.06);
-    box-shadow: 0 0 15px #FF4500;
+    box-shadow: 0 0 15px #F26F23;
 }
 
 ul li.li4:hover {
@@ -174,7 +174,7 @@ ul li.li4:hover {
 }
 
 ul li.li4:hover>a.a4 {
-    color: #FF4500;
+    color: #F26F23;
 }
 
 ul li.li5::before {
